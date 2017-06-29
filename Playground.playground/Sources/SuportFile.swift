@@ -21,5 +21,9 @@ public func delay(_ delay: TimeInterval, closure: @escaping ()->()) {
         }
     }
     
+    public func addDelimiter() {
+        print("\n#####################################\n")
+    }
+    
 #endif
 
