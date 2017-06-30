@@ -1,10 +1,11 @@
 
-/*:
- ## Creating Observables
- */
 
 import Foundation
 import RxSwift
+
+/*:
+ ## Creating Observables
+ */
 
 //: ##### A partir de uma lista de elementos
 //: Cada item da lista será uma emissão next(Elemento)

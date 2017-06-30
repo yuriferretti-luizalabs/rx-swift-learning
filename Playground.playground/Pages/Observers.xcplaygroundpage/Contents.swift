@@ -1,15 +1,14 @@
 //: [Anterior](@previous)
 
+import Foundation
+import RxSwift
+
 /*:
  ## Observers
  */
 
-import Foundation
-import RxSwift
-
 //: Observer é qualquer objeto que reaje a um evento emitido por um Observable, normalmente são do tipo `ObservableType`
 //: Para observar uma sequência temos que passar um `observer` como parâmetro do método `subscribe` ou usar `subscribe(onNext: onError: onCompleted: onDisposed:)`
-
 
 //: Exemplo de classe que implementa ObserverType e é usada para printar os eventos no console
 class PrintObserver<Element>: ObserverType {

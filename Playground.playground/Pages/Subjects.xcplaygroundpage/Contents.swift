@@ -1,11 +1,12 @@
 //: [Anterior](@previous)
 
+import Foundation
+import RxSwift
+
 /*:
  ## Observers
  */
 
-import Foundation
-import RxSwift
 
 //: Subjects são entidades que podem se comportar como Observable e Observer, ou seja, podem emitir e receber eventos. Diferem entre sí pela forma com que emitem eventos para seus Observers
 
@@ -118,6 +119,7 @@ errorSubject.onNext("event 3")
  event 2
  ```
  */
+playgroundTimeLimit(seconds: 10)
 
 
 //: [Próxima](@next)
