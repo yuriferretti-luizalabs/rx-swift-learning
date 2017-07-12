@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		601AD6DA1F15DDC700E8063C /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601AD6D91F15DDC700E8063C /* MapViewController.swift */; };
+		601AD6DD1F15E18500E8063C /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601AD6DC1F15E18500E8063C /* API.swift */; };
+		601AD6DF1F15E2D900E8063C /* FlatMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601AD6DE1F15E2D900E8063C /* FlatMapViewController.swift */; };
+		601AD6E21F15E48700E8063C /* ConcatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601AD6E11F15E48700E8063C /* ConcatViewController.swift */; };
+		601AD6E41F15E64200E8063C /* Observable+Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601AD6E31F15E64200E8063C /* Observable+Colors.swift */; };
+		601AD6E71F15E80D00E8063C /* MergeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601AD6E61F15E80D00E8063C /* MergeViewController.swift */; };
+		601AD6EA1F15E95400E8063C /* CombineLatestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601AD6E91F15E95400E8063C /* CombineLatestViewController.swift */; };
+		601AD6EE1F15EB5200E8063C /* WithLatestFromViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601AD6ED1F15EB5200E8063C /* WithLatestFromViewController.swift */; };
 		608E17A01F03302400508007 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608E179F1F03302400508007 /* AppDelegate.swift */; };
 		608E17A21F03302400508007 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608E17A11F03302400508007 /* ViewController.swift */; };
 		608E17A51F03302400508007 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 608E17A31F03302400508007 /* Main.storyboard */; };
@@ -17,6 +25,14 @@
 
 /* Begin PBXFileReference section */
 		2D1348D8282B88DF11FE7F36 /* Pods_RxSwiftLearning.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftLearning.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		601AD6D91F15DDC700E8063C /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		601AD6DC1F15E18500E8063C /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		601AD6DE1F15E2D900E8063C /* FlatMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlatMapViewController.swift; sourceTree = "<group>"; };
+		601AD6E11F15E48700E8063C /* ConcatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConcatViewController.swift; sourceTree = "<group>"; };
+		601AD6E31F15E64200E8063C /* Observable+Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Observable+Colors.swift"; sourceTree = "<group>"; };
+		601AD6E61F15E80D00E8063C /* MergeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MergeViewController.swift; sourceTree = "<group>"; };
+		601AD6E91F15E95400E8063C /* CombineLatestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CombineLatestViewController.swift; sourceTree = "<group>"; };
+		601AD6ED1F15EB5200E8063C /* WithLatestFromViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WithLatestFromViewController.swift; sourceTree = "<group>"; };
 		608E179C1F03302400508007 /* RxSwiftLearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftLearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		608E179F1F03302400508007 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		608E17A11F03302400508007 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -48,6 +64,56 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		601AD6D81F15DDA700E8063C /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				601AD6D91F15DDC700E8063C /* MapViewController.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		601AD6DB1F15E16D00E8063C /* flatMap */ = {
+			isa = PBXGroup;
+			children = (
+				601AD6DC1F15E18500E8063C /* API.swift */,
+				601AD6DE1F15E2D900E8063C /* FlatMapViewController.swift */,
+			);
+			path = flatMap;
+			sourceTree = "<group>";
+		};
+		601AD6E01F15E47A00E8063C /* startWith-concat */ = {
+			isa = PBXGroup;
+			children = (
+				601AD6E11F15E48700E8063C /* ConcatViewController.swift */,
+				601AD6E31F15E64200E8063C /* Observable+Colors.swift */,
+			);
+			path = "startWith-concat";
+			sourceTree = "<group>";
+		};
+		601AD6E51F15E80000E8063C /* Merge */ = {
+			isa = PBXGroup;
+			children = (
+				601AD6E61F15E80D00E8063C /* MergeViewController.swift */,
+			);
+			path = Merge;
+			sourceTree = "<group>";
+		};
+		601AD6E81F15E94700E8063C /* CombineLatest */ = {
+			isa = PBXGroup;
+			children = (
+				601AD6E91F15E95400E8063C /* CombineLatestViewController.swift */,
+			);
+			path = CombineLatest;
+			sourceTree = "<group>";
+		};
+		601AD6EC1F15EB4500E8063C /* WithLatestFrom */ = {
+			isa = PBXGroup;
+			children = (
+				601AD6ED1F15EB5200E8063C /* WithLatestFromViewController.swift */,
+			);
+			path = WithLatestFrom;
+			sourceTree = "<group>";
+		};
 		608E17931F03302300508007 = {
 			isa = PBXGroup;
 			children = (
@@ -69,6 +135,12 @@
 		608E179E1F03302400508007 /* RxSwiftLearning */ = {
 			isa = PBXGroup;
 			children = (
+				601AD6EC1F15EB4500E8063C /* WithLatestFrom */,
+				601AD6E81F15E94700E8063C /* CombineLatest */,
+				601AD6E51F15E80000E8063C /* Merge */,
+				601AD6E01F15E47A00E8063C /* startWith-concat */,
+				601AD6DB1F15E16D00E8063C /* flatMap */,
+				601AD6D81F15DDA700E8063C /* Map */,
 				608E179F1F03302400508007 /* AppDelegate.swift */,
 				608E17A11F03302400508007 /* ViewController.swift */,
 				608E17A31F03302400508007 /* Main.storyboard */,
@@ -212,8 +284,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				601AD6E21F15E48700E8063C /* ConcatViewController.swift in Sources */,
+				601AD6DF1F15E2D900E8063C /* FlatMapViewController.swift in Sources */,
 				608E17A21F03302400508007 /* ViewController.swift in Sources */,
+				601AD6E71F15E80D00E8063C /* MergeViewController.swift in Sources */,
+				601AD6DA1F15DDC700E8063C /* MapViewController.swift in Sources */,
+				601AD6EA1F15E95400E8063C /* CombineLatestViewController.swift in Sources */,
+				601AD6DD1F15E18500E8063C /* API.swift in Sources */,
+				601AD6EE1F15EB5200E8063C /* WithLatestFromViewController.swift in Sources */,
 				608E17A01F03302400508007 /* AppDelegate.swift in Sources */,
+				601AD6E41F15E64200E8063C /* Observable+Colors.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,6 +461,7 @@
 				608E17B01F03302400508007 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

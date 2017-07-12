@@ -14,6 +14,7 @@ obs1.subscribe(onNext: { (value) in
     print(value)
 })
 addDelimiter()
+
 /*:
  ```
  1
