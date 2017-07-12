@@ -18,7 +18,12 @@ class FlatMapViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // flatMap code
+        textField.rx.text.orEmpty
+            .flatMap { text in
+                API.searchResult(for: text)
+            }
+            .bind(to: label.rx.text)
+            
     }
 
 }

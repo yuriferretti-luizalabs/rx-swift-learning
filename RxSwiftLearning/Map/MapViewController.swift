@@ -19,7 +19,15 @@ class MapViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        //map code
+        textField.rx.text.orEmpty
+            .map {
+                $0.characters.count
+            }
+            .map { chars in
+                "has \(chars)"
+            }
+            .bind(to: label.rx.text)
+            
     }
 
 }

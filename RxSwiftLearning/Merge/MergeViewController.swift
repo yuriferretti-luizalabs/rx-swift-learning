@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class MergeViewController: UIViewController {
 
@@ -21,5 +23,13 @@ class MergeViewController: UIViewController {
             target: nil,
             action: nil
         )
+
+        Observable.merge([
+                navigationItem.leftBarButtonItem!.rx.tap.asObservable(),
+                button.rx.tap.asObservable()
+            ])
+            .subscribe(onNext: {
+                self.navigationController?.popViewController(animated: true)
+            })
     }
 }

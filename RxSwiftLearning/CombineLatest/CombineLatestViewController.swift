@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class CombineLatestViewController: UIViewController {
 
@@ -17,6 +19,22 @@ class CombineLatestViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        let emailIsValid = emailTextField.rx.text.orEmpty
+            .map { text in
+                text.contains("@")
+            }
+            .shareReplay(1)
+
+        let passwordIsValid = passwordTextField.rx.text.orEmpty
+            .map { pass in
+                pass.characters.count >= 6
+            }
+
+        emailIsValid.bind(to: passwordTextField.rx.isEnabled)
+
+        Observable.combineLatest(emailIsValid, passwordIsValid) { isEmailValid, isPasswordValid in
+            return isEmailValid && isPasswordValid
+        }
+        .bind(to: button.rx.isEnabled)
     }
 }

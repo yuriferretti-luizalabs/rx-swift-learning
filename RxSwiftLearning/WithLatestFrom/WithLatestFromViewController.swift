@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class WithLatestFromViewController: UIViewController {
 
@@ -18,6 +20,11 @@ class WithLatestFromViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        let ints = Observable<Int>.interval(0.5, scheduler: MainScheduler.instance)
+
+        button.rx.tap.asObservable()
+            .withLatestFrom(ints)
+            .map { "\($0)" }
+            .bind(to: label.rx.text)
     }
 }
